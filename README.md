@@ -1,5 +1,17 @@
 # terraform-bitbucket-repository
 
+### Provider configuration
+```
+terraform {
+  required_providers {
+    bitbucket = {
+      source  = "DrFaust92/bitbucket"
+      version = "2.30.2"
+    }
+  }
+}
+```
+
 BitBucket Credentials set
 
 ### Variant 1
@@ -24,7 +36,7 @@ module "bitbucket" {
   source = "../"
 
   name = "Repository-terraformed"
-  owner = "miandevops"
+  owner = "DevOps"
   description = "Repository description"
   website = "www.dasmeta.com"
   language = "python"
@@ -47,7 +59,7 @@ module "bitbucket" {
      name = "development1"
      stage = "Test"
      variables = {
-       "key1" = ["value1", "secured"]
+       "key1" = ["value1"]
        "key2" = ["value2", "secured"]
      }
     },
@@ -56,7 +68,7 @@ module "bitbucket" {
      stage = "Test"
      variables = {
        "key1" = ["value1", "secured"]
-       "key2" = ["value2", "secured"]
+       "key2" = ["value2"]
      }
     },
   ]
@@ -65,5 +77,32 @@ module "bitbucket" {
     key1 = ["value1", "secured"]
     key2 = ["value2"]
   }
+}
+```
+
+### Example without creation of project
+```
+module "bitbucket" {
+  source = "../"
+
+  name = "Repository-terraformed"
+  owner = "DevOps"
+  description = "Repository description"
+
+  project = {
+    create = false
+    key = "project1"
+  }
+}
+```
+
+### Example minimal
+(if you don't specify project name, "untitled_project" will be created automatically)
+```
+module "bitbucket" {
+  source = "../"
+
+  name = "Repository-terraformed"
+  owner = "DevOps"
 }
 ```
