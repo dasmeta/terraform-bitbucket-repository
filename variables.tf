@@ -1,35 +1,42 @@
 # Repository
 variable "owner" {
-  type = string
+  description = "Owner name of repository"
+  type        = string
 }
 
 variable "name" {
-  type = string
+  description = "Repository name"
+  type        = string
 }
 
 variable "description" {
-  type    = string
-  default = ""
+  description = "Repository description"
+  type        = string
+  default     = ""
 }
 
 variable "pipelines_enabled" {
-  type    = bool
-  default = true
+  description = "Weather enable pipelines or not"
+  type        = bool
+  default     = true
 }
 
 variable "slug" {
-  type    = string
-  default = ""
+  description = "Repository slug"
+  type        = string
+  default     = ""
 }
 
 variable "is_private" {
-  type    = bool
-  default = false
+  description = "Repository visibility"
+  type        = bool
+  default     = false
 }
 
 variable "website" {
-  type    = string
-  default = ""
+  description = "Website url to bind to repository"
+  type        = string
+  default     = ""
 }
 
 variable "language" {
@@ -38,14 +45,10 @@ variable "language" {
   default     = ""
 }
 
-variable "project_key" {
-  type    = string
-  default = ""
-}
-
 variable "fork_policy" {
-  type    = string
-  default = "allow_forks"
+  description = "Fork Policy configuration for repository"
+  type        = string
+  default     = "allow_forks"
   validation {
     condition     = contains(["allow_forks", "no_forks", "no_public_forks"], var.fork_policy)
     error_message = "Invalid input, options: \"allow_forks\", \"no_forks\", \"no_public_forks\""
@@ -53,6 +56,7 @@ variable "fork_policy" {
 }
 
 variable "repository_variables" {
+  description = "Repository wide variable to use in pipelines"
   type = list(object({
     name    = string
     value   = string
@@ -63,11 +67,13 @@ variable "repository_variables" {
 
 # Project
 variable "create_project" {
-  type    = bool
-  default = false
+  description = "Weather create project or not"
+  type        = bool
+  default     = false
 }
 
 variable "project" {
+  description = "Project configuration"
   type = object({
     create     = bool
     name       = optional(string)
@@ -83,6 +89,7 @@ variable "project" {
 }
 
 variable "deployments" {
+  description = "Deployments configuration"
   type = list(object({
     name  = string
     stage = string
@@ -97,6 +104,7 @@ variable "deployments" {
 
 # Access Control
 variable "restrictions" {
+  description = "Restriction configuration"
   type = object({
     action = string
     branch = string
