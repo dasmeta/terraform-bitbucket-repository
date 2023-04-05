@@ -2,7 +2,7 @@ variable "deployments" {
   type = list(object({
     name = string
     stage = string
-    variables = map(string)
+    variables = map(any)
   }))
 }
 

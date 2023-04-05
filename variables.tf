@@ -77,6 +77,15 @@ variable "deployments" {
   type = list(object({
     name = string
     stage = string
-    variables = map(string)
+    variables = map(any)
   }))
+}
+
+# Access Control
+variable "restrictions" {
+  type = object({
+    action = string
+    branch = string
+  })
+  default = null
 }

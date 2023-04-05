@@ -15,21 +15,20 @@ module "bitbucket" {
     is_private = false
   }
 
+  restrictions = {
+    action= "push"
+    branch = "master"
+  }
+
   deployments = [
     {
      name = "development1"
      stage = "Test"
      variables = {
-       "key1" = "value1"
-       "key2" = "value2"
-     }
-    },
-    {
-     name = "development2"
-     stage = "Test"
-     variables = {
-       "key2" = "value2"
+       "key1" = ["value1", "secured"]
+       "key2" = ["value2", "secured"]
      }
     }
   ]
 }
+
