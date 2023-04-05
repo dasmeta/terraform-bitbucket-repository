@@ -1,9 +1,9 @@
 output "repository_id" {
-  value = bitbucket_repository.infrastructure.id
+  value = bitbucket_repository.this.id
 }
 
 output "repository_name" {
-  value = bitbucket_repository.infrastructure.name
+  value = bitbucket_repository.this.name
 }
 
 output "deployment_variables" {

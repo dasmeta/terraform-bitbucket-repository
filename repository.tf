@@ -1,4 +1,4 @@
-resource "bitbucket_repository" "infrastructure" {
+resource "bitbucket_repository" "this" {
   depends_on        = [bitbucket_project.devops]
   owner             = var.owner
   name              = var.name

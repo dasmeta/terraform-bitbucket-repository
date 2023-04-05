@@ -94,7 +94,7 @@ module "bitbucket" {
 |------|------|
 | [bitbucket_branch_restriction.master](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/branch_restriction) | resource |
 | [bitbucket_project.devops](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/project) | resource |
-| [bitbucket_repository.infrastructure](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/repository) | resource |
+| [bitbucket_repository.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/repository) | resource |
 | [bitbucket_repository_variable.debug](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/repository_variable) | resource |
 
 ## Inputs

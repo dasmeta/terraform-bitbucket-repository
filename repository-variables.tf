@@ -6,5 +6,5 @@ resource "bitbucket_repository_variable" "debug" {
   value   = each.value.value
   secured = each.value.secured
 
-  repository = bitbucket_repository.infrastructure.id
+  repository = bitbucket_repository.this.id
 }
