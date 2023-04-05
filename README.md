@@ -118,5 +118,9 @@ module "bitbucket" {
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_deployment_variables"></a> [deployment\_variables](#output\_deployment\_variables) | n/a |
+| <a name="output_repository_id"></a> [repository\_id](#output\_repository\_id) | n/a |
+| <a name="output_repository_name"></a> [repository\_name](#output\_repository\_name) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

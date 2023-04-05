@@ -86,5 +86,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_variables"></a> [variables](#output\_variables) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
