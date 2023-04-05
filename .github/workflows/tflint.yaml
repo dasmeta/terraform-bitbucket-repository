@@ -18,8 +18,7 @@ jobs:
       matrix:
         path:
           - /
-          - record-alias-alb/
-          - record-alias-cdn/
+          - ./modules/deployments
 
     steps:
     - uses: dasmeta/reusable-actions-workflows/tflint@main
