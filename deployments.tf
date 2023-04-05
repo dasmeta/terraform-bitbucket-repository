@@ -1,5 +1,5 @@
 module "deployments" {
-  source = "./deployments"
-  deployments = var.deployments
+  source        = "./modules/deployments"
+  deployments   = var.deployments
   repository_id = bitbucket_repository.infrastructure.id
 }

@@ -2,7 +2,7 @@ module "bitbucket" {
   source = "../"
 
   name        = "Repository-terraformed"
-  owner       = "miandevops"
+  owner       = "DevOps"
   description = "Repository description"
   website     = "www.dasmeta.com"
   language    = "python"
