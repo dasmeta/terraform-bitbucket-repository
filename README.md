@@ -2,7 +2,6 @@
 
 ## About
 
----
 Terraform module to manage BitBucket repositories and its resources
 
 ### Provider configuration
