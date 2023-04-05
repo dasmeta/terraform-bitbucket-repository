@@ -28,7 +28,15 @@ module "bitbucket" {
        "key1" = ["value1", "secured"]
        "key2" = ["value2", "secured"]
      }
-    }
+    },
+    {
+     name = "development1"
+     stage = "Test"
+     variables = {
+       "key1" = ["value1", "secured"]
+       "key2" = ["value2", "secured"]
+     }
+    },
   ]
 
   repository_variables = {
