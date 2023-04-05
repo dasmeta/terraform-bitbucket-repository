@@ -1,6 +1,13 @@
-# terraform-bitbucket-repository
+# Terraform module for BitBucket
+
+## About
+
+---
+Terraform module to manage BitBucket repositories and its resources
 
 ### Provider configuration
+
+---
 ```
 terraform {
   required_providers {
@@ -14,7 +21,7 @@ terraform {
 
 BitBucket Credentials set
 
-### Variant 1
+ - ### Variant 1
 
 Configure provider explicitly (Not Recommended)
 ```
@@ -23,14 +30,17 @@ provider "bitbucket" {
   password = "<app-password>"
 }
 ```
-### Variant 2
+ - ### Variant 2
 Configure environment variables
 ```
 export BITBUCKET_USERNAME=<username>
 export BITBUCKET_PASSWORD=<app-password>
 ```
 
-### Full Example
+## Examples
+#### Full Example
+
+---
 ```
 module "bitbucket" {
   source = "../"
@@ -81,6 +91,8 @@ module "bitbucket" {
 ```
 
 ### Example without creation of project
+
+---
 ```
 module "bitbucket" {
   source = "../"
@@ -97,6 +109,8 @@ module "bitbucket" {
 ```
 
 ### Example minimal
+
+---
 (if you don't specify project name, "untitled_project" will be created automatically)
 ```
 module "bitbucket" {
