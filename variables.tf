@@ -52,6 +52,11 @@ variable "fork_policy" {
   }
 }
 
+variable "repository_variables" {
+  type = map(any)
+  default = {}
+}
+
 # Project
 variable "create_project" {
   type = bool

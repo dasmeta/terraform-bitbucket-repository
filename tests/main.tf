@@ -30,5 +30,9 @@ module "bitbucket" {
      }
     }
   ]
-}
 
+  repository_variables = {
+    key1 = ["value1", "secured"]
+    key2 = ["value2"]
+  }
+}
