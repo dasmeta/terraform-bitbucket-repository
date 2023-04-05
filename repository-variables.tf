@@ -1,4 +1,4 @@
-resource "bitbucket_repository_variable" "debug" {
+resource "bitbucket_repository_variable" "this" {
 
   for_each = { for variable in var.repository_variables : variable.name => variable }
 

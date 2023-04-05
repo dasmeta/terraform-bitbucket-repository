@@ -1,5 +1,5 @@
 resource "bitbucket_repository" "this" {
-  depends_on        = [bitbucket_project.devops]
+  depends_on        = [bitbucket_project.this]
   owner             = var.owner
   name              = var.name
   description       = var.description != "" ? var.description : null
@@ -12,7 +12,7 @@ resource "bitbucket_repository" "this" {
   fork_policy       = var.fork_policy != "" ? var.fork_policy : null
 }
 
-resource "bitbucket_project" "devops" {
+resource "bitbucket_project" "this" {
   count      = var.project.create ? 1 : 0
   owner      = var.owner
   name       = var.project.name
