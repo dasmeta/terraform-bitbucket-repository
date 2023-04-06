@@ -58,13 +58,13 @@ locals {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_bitbucket"></a> [bitbucket](#requirement\_bitbucket) | 2.30.2 |
+| <a name="requirement_bitbucket"></a> [bitbucket](#requirement\_bitbucket) | 2.31.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_bitbucket"></a> [bitbucket](#provider\_bitbucket) | 2.30.2 |
+| <a name="provider_bitbucket"></a> [bitbucket](#provider\_bitbucket) | 2.31.0 |
 
 ## Modules
 
@@ -74,8 +74,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [bitbucket_deployment.depl](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/deployment) | resource |
-| [bitbucket_deployment_variable.depl-vars](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/deployment_variable) | resource |
+| [bitbucket_deployment.depl](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/deployment) | resource |
+| [bitbucket_deployment_variable.depl-vars](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/deployment_variable) | resource |
 
 ## Inputs
 
