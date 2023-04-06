@@ -75,13 +75,13 @@ module "bitbucket" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.3.0 |
-| <a name="requirement_bitbucket"></a> [bitbucket](#requirement\_bitbucket) | 2.30.2 |
+| <a name="requirement_bitbucket"></a> [bitbucket](#requirement\_bitbucket) | 2.31.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_bitbucket"></a> [bitbucket](#provider\_bitbucket) | 2.30.2 |
+| <a name="provider_bitbucket"></a> [bitbucket](#provider\_bitbucket) | 2.31.0 |
 
 ## Modules
 
@@ -93,10 +93,10 @@ module "bitbucket" {
 
 | Name | Type |
 |------|------|
-| [bitbucket_branch_restriction.master](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/branch_restriction) | resource |
-| [bitbucket_project.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/project) | resource |
-| [bitbucket_repository.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/repository) | resource |
-| [bitbucket_repository_variable.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.30.2/docs/resources/repository_variable) | resource |
+| [bitbucket_branch_restriction.master](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/branch_restriction) | resource |
+| [bitbucket_project.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/project) | resource |
+| [bitbucket_repository.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/repository) | resource |
+| [bitbucket_repository_variable.this](https://registry.terraform.io/providers/DrFaust92/bitbucket/2.31.0/docs/resources/repository_variable) | resource |
 
 ## Inputs
 
